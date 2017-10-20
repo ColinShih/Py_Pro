@@ -5,19 +5,19 @@ Created on 2017年9月26日
 '''
 
 while True:
-    txt = input('pls input a number:')
+    txt = input('pls guess a number:')
     if txt == 'stop':
         break
     elif not txt.isnumeric():
-        print('your input is not a number')
+        print('Your input is not a number')
         break
     else:
         num = int(txt)
         
         if num < 20:
-            print('你输入的数值过小')
+            print('The number is too small')
         elif num > 20:
-            print('你输入的数值过大')
+            print('The number is too large')
         else:
             print('congratulations!')
             break
